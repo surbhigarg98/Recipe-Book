@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row mb-4 mt-4">
+        <div class="col-md-12">
+            <button class="btn btn-success" (click)="onNewEdit()">Add New</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            
+            <app-recepies-item  *ngFor="let recepies of recepie ; let i = index"
+            [recepie]="recepies"
+          [index]="i"
+            ></app-recepies-item>
+        </div>
+    </div>
+   
+</div>
